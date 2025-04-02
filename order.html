@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us or place your order for a classic 20th-century car. Fill out the form to get started.">
+    <meta name="keywords" content="classic cars, order form, contact us, vintage vehicles">
+    <title>AutoRush Retro - Contact & Order Form</title>
+    <link rel="stylesheet" href="order_styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>AutoRush Retro</h2>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#Products">Our Products</a></li>
+                <li><a href="#" aria-current="page">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Place Your Order</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">Home Address:</label>
+                <input type="address" id="address" name="address" required>
+
+                <label for="car_model">Car Model:</label>
+                <select id="car_model" name="car_model" required>
+                    <option value="">Select a Car</option>
+                    <option value="Shelby Cobra">Shelby Cobra - $55,000</option>
+                    <option value="Volkswagen Karmann">Volkswagen Karmann - $72,000</option>
+                    <option value="Volkswagen Beetle">Volkswagen Beetle - $25,000</option>
+                    <option value="Peugeot 504">Peugeot 504 - $35,000</option>
+                    <option value="Peugeot 505">Peugeot 505 - $37,000</option>
+                    <option value="Mercedes Benz">Mercedes Benz - $95,000</option>
+                    <option value="Chevrolet Sprint">Chevrolet Sprint - $12,500</option>
+                    <option value="Ford Fairlane 500">Ford Fairlane 500 - $80,000</option>
+                    <option value="Mercedes Benz W123">Mercedes Benz W123 - $30,000</option>
+                    <option value="Ford Cortina">Ford Cortina - $45,000</option>
+                </select>
+
+                <div class="options-group">
+                    <label>Additional Options:</label><br>
+                    <input type="checkbox" id="restoration" name="options[]" value="restoration">
+                    <label for="restoration">Full Restoration (+$5,000)</label><br>
+                    <input type="checkbox" id="custom_paint" name="options[]" value="custom_paint">
+                    <label for="custom_paint">Custom Paint Job (+$2,000)</label><br>
+                    <input type="checkbox" id="delivery" name="options[]" value="delivery">
+                    <label for="delivery">Delivery (+$1000)</label><br>
+                </div>
+
+                <div class="payment-group">
+                    <label>Payment Method:</label><br>
+                    <input type="checkbox" id="paypal" name="payment_method" value="paypal" required>
+                    <label for="paypal">PayPal</label><br>
+                    <input type="checkbox" id="credit_card" name="payment_method" value="credit_card">
+                    <label for="credit_card">Credit Card</label><br>
+                    <input type="checkbox" id="debit_card" name="payment_method" value="debit_card">
+                    <label for="debit_card">Debit Card</label><br>
+                    <input type="checkbox" id="bank_transfer" name="payment_method" value="bank_transfer">
+                    <label for="bank_transfer">Bank Transfer</label><br>
+                    <input type="checkbox" id="cash_on_delivery" name="payment_method" value="cash_on_delivery">
+                    <label for="cash_on_delivery">Cash on Delivery</label><br>
+                </div>
+
+                <label for="instructions">Special Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="4" placeholder="e.g., Preferred delivery date and time, delivery address, specific color requests etc."></textarea>
+
+                <button type="submit">Submit Order</button>
+            </form>
+
+            <section class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: <a href="mailto:info@autorush90s.com">info@autorush90s.com</a></p>
+                <p>Phone: +1-800-333-7774</p>
+                <p>Address: 123 Georgian Drive, Barrie, CA 80011</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 AutoRush Classics. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@autorush90s.com">info@autorush90s.com</a></p>
+        <p>Follow us: 
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">X</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

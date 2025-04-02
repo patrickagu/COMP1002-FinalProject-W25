@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background */
+    color: #d9d9d9; /* Light text for contrast */
+}
+
+/* Header */
+header {
+    background-color: #0d1b2a; /* Darker blue-gray */
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 2rem;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover,
+.nav ul li a:focus {
+    color: #e63946; /* Red accent */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(70%); /* Slightly darkened for text readability */
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #f1faee;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Wrapper */
+.content-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.brand-story,
+.mission-values,
+.team {
+    background: #2b2b2b; /* Darker section background */
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.brand-story h3,
+.mission-values h3,
+.team h3 {
+    font-size: 2rem;
+    color: #e63946; /* Red accent */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.brand-story p,
+.mission-values p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.mission-values ul {
+    list-style: none;
+    margin-left: 1.5rem;
+}
+
+.mission-values ul li {
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.mission-values ul li::before {
+    content: "•";
+    color: #e63946;
+    position: absolute;
+    left: -1rem;
+}
+
+.mission-values ul li strong {
+    color: #ffffff;
+}
+
+/* Team Section */
+.team h3 {
+text-align: center;
+color: #e63946;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 180px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid none;
+}
+
+.team-member h4 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.team-member .role {
+    font-size: 1.1rem;
+    color: #e63946;
+    margin-bottom: 0.5rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    color: #d9d9d9;
+}
+
+/* Footer */
+footer {
+    background-color: #0d1b2a;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #e63946;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
+        margin-top: 1rem;
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image {
+        height: 300px;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .brand-story h3,
+    .mission-values h3,
+    .team h3 {
+        font-size: 1.8rem;
+    }
+
+    .team-member h4 {
+        font-size: 1.3rem;
+    }
+}
