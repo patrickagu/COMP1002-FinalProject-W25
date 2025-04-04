@@ -17,20 +17,8 @@ Welcome to **AutoRush Retro**, a sleek and modern web application designed to al
 ## Installation
 To run this project locally, follow these steps:
 
-1. **Clone the Repository**:
+**Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/autorush-retro.git
 
    python -m http.server 8000
-
-2. **File Structure**
-autorush-retro/
-│
-├── css/
-│   └── order_styles.css    # Stylesheet for the page
-├── images/
-│   └── map.png            # Static map image
-├── JS/
-│   └── script.js          # Placeholder for JavaScript
-├── index.html             # Main HTML file
-└── README.md              # This file
