@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff; /* White background */
+    color: #333; /* Dark text for contrast on white background */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo h2 {
+    font-size: 2rem;
+    color: #ff4d4d;
+    font-weight: 700;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+    color: #ff4d4d;
+}
+
+/* Main */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h3 {
+    text-align: center;
+    color: #ff4d4d;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.form-map-wrapper {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+form {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #121111;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0 0.2rem;
+    color: #333; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 70%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #f9f9f9; /* Light background  */
+    color: #333; /* Dark text for inputs */
+    font-size: 1rem;
+}
+
+select {
+    width: 70%;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical;
+}
+
+.options-box, .payment-box {
+    background: rgba(255, 255, 255, 0.9); /* Match form background */
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border: 1px solid #121111;
+}
+
+.options-box h3, .payment-box h3 {
+    color: #ff4d4d;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.options-group label, .payment-group label {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+input[type="checkbox"],
+input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    background: #ff4d4d;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e63939;
+}
+
+/* Contact */
+.contact-map {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+    color: #ff4d4d;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+.static-map {
+    height: 250px;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 5px;
+    object-fit: cover; /* Ensures the image fits nicely */
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: #ff4d4d;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* To make the page more responsive */
+@media (max-width: 768px) {
+    .form-map-wrapper {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+        width: 100%;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
